@@ -135,7 +135,8 @@ print("***PROBLEM 1.3 : ARRAY INSERTION")
 //Warning: The second element is equivalent to the first index, since we begin counting from 0. Think about it, it's tricky. 0 is the first element and 1 is the second element.
  //Hint: see line 78
 //print the registration list and observe the output making sure it is correct.
-
+   registrationList.insert("Charlie" , at: 1)
+print(registrationList)
 
 
  print("\n")
@@ -150,8 +151,8 @@ print("\n")
 print("***PROBLEM 1.4 : ARRAY MODIFICATION")
 // Someone had a conflict and decided to transfer her registration to someone else. Use array subscripting to change the sixth element to Rebecca. Print the contents of the collection.
  //See the example above and remember the sixth element is the fifth index.
-// registrationList[1] = "Charlie1"
-// print(registrationList)
+ registrationList[5] = "Rebecca"
+ print(registrationList)
 
 
  print("\n")
@@ -160,8 +161,10 @@ print("***PROBLEM 1.4 : ARRAY MODIFICATION")
 print("***PROBLEM 1.5 : ARRAY REMOVAL")
 // Call removeLast() on registrationList. Store the result of removeLast() into a new constant deletedItem. If done correctly, this should remove Rebecca from the collection. print the registrationList, then print deletedItem.
 //Observe the output in the console and make sure it is correct.
+let deletedItem = registrationList.removeLast()
+print(registrationList)
+print(deletedItem)
 
- 
 print("\n")
 
 print("***PROBLEM 2.0 : FITNESS TRACKING")
