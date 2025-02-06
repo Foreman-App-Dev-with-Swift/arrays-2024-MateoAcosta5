@@ -104,14 +104,16 @@ There are lots of ways to manipulate arrays using methods and index calling, the
 
 print("***PROBLEM 1.0 : BASIC ARRAY CREATION")
 //  Assume you are an event coordinator for a community charity event and are keeping a list of who has registered. Create a variable registrationList that will hold strings. It should be empty after initialization. Print the empty list and observe the output in the console. Hint: line 20
- 
+var registrationList: [String] = []
+print(registrationList)
 
  print("\n")
 
 print("***PROBLEM 1.1 : BASIC ARRAY ADDITION")
 // Your friend Sara is the first to register for the event. Add her name to registrationList using the append(_:) method. Print the contents of the collection.
 //Hint: See lines 35 & 48
- 
+registrationList.append("Sara")
+print(registrationList)
 
  
 print("\n")
@@ -122,7 +124,9 @@ print("***PROBLEM 1.2 : MORE ARRAY ADDITIONS")
 //This is how you do this: 1. Create a new array called moreNames and fill it with four new names.
 // 2. Then add that new array to your original array. Yes ADD.
 //How? To add in multiple names in one step use the += operator we will need to have the names in a separate array that contains the names. Then print your registrationList and observe the output in the console.
-
+var moreNames = ["Mike", "Charles", "Jack", "Finn"]
+registrationList += moreNames
+print(registrationList)
 
  print("\n")
  
@@ -131,23 +135,24 @@ print("***PROBLEM 1.3 : ARRAY INSERTION")
 //Warning: The second element is equivalent to the first index, since we begin counting from 0. Think about it, it's tricky. 0 is the first element and 1 is the second element.
  //Hint: see line 78
 //print the registration list and observe the output making sure it is correct.
-
+   registrationList.insert("Charlie" , at: 1)
+print(registrationList)
 
 
  print("\n")
  
 print("***Example for 1.4")
 //You can identify a particular portion of an array by adding the element number with name of the array. This is called subscripting.
-registrationList[1] = "Charlie1"
-print(registrationList)
+//registrationList[1] = "Charlie1"
+//print(registrationList)
 
 print("\n")
 
 print("***PROBLEM 1.4 : ARRAY MODIFICATION")
 // Someone had a conflict and decided to transfer her registration to someone else. Use array subscripting to change the sixth element to Rebecca. Print the contents of the collection.
  //See the example above and remember the sixth element is the fifth index.
-// registrationList[1] = "Charlie1"
-// print(registrationList)
+ registrationList[5] = "Rebecca"
+ print(registrationList)
 
 
  print("\n")
@@ -156,8 +161,10 @@ print("***PROBLEM 1.4 : ARRAY MODIFICATION")
 print("***PROBLEM 1.5 : ARRAY REMOVAL")
 // Call removeLast() on registrationList. Store the result of removeLast() into a new constant deletedItem. If done correctly, this should remove Rebecca from the collection. print the registrationList, then print deletedItem.
 //Observe the output in the console and make sure it is correct.
+let deletedItem = registrationList.removeLast()
+print(registrationList)
+print(deletedItem)
 
- 
 print("\n")
 
 print("***PROBLEM 2.0 : FITNESS TRACKING")
