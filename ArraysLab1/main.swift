@@ -175,15 +175,23 @@ print("***PROBLEM 2.0 : FITNESS TRACKING")
  */
 //Print all three of the arrays to make sure it outputs in the console.
 
-
-
+let walkingChallenges : [String] = ["walk 3 miles a day", "walk 5 times a week"]
+let runningChallenges : [String] = ["Run 3 miles a day","run 5 times a week"]
+let liftingChallenges : [String] = ["Lift for 3 hours a day", " lift 5 times a week"]
+print(walkingChallenges)
+print(runningChallenges)
+print(liftingChallenges)
 
 print("\n")
 
 print("PROBLEM 2.1 : FITNESS TRACKING")
 // In your app you want to show all of these lists on the same screen grouped into sections. Create a challenges array that holds (assigned the value) each of the lists you have created (it will be an array of arrays). Using the new challenges array, print the first element. Remember what number the first element it. Hint: it's alway minus 1.
-
-
+var list1 = ["walkingChallenges"]
+var list2 = ["runningChallenges"]
+var list3 = ["LiftingChallenges"]
+print(list1)
+print(list2)
+print(list3)
 
 print("\n")
 print("***PROBLEM 2.2 : PRINTING FITNESS TRACKING")
